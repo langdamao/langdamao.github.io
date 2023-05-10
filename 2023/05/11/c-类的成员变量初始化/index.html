@@ -148,9 +148,9 @@
 <p>c++ reference 链接: <a target="_blank" rel="noopener" href="https://en.cppreference.com/w/cpp/language/default_initialization">default_initialization</a></p>
 <p>不需要知道这个问题发现、排查、研究的过程的伙伴可以直接跳过啦</p>
 </blockquote>
-<h3 id="问题表现"><a href="#问题表现" class="headerlink" title="问题表现"></a>问题表现</h3><h3 id="排查过程"><a href="#排查过程" class="headerlink" title="排查过程"></a>排查过程</h3><h3 id="关于结论的验证"><a href="#关于结论的验证" class="headerlink" title="关于结论的验证"></a>关于结论的验证</h3><p><img src="https://imgse.com/i/p9rMl6J" alt="85df923b23c5f5e81108b187ce4c82c3"></p>
-<p><img src="https://imgse.com/i/p9rMQl4" alt="ab9dc5801fbc1d1910bc5e1b9dd2cff3"></p>
-<p><img src="https://imgse.com/i/p9rMufU" alt="909e59975caee0a33d811e3f662cc52f"></p>
+<h3 id="问题表现"><a href="#问题表现" class="headerlink" title="问题表现"></a>问题表现</h3><h3 id="排查过程"><a href="#排查过程" class="headerlink" title="排查过程"></a>排查过程</h3><h3 id="关于结论的验证"><a href="#关于结论的验证" class="headerlink" title="关于结论的验证"></a>关于结论的验证</h3><p><img src="https://s1.ax1x.com/2023/05/11/p9rMl6J.png" alt="85df923b23c5f5e81108b187ce4c82c3"></p>
+<p><img src="https://s1.ax1x.com/2023/05/11/p9rMQl4.png" alt="ab9dc5801fbc1d1910bc5e1b9dd2cff3"></p>
+<p><img src="https://s1.ax1x.com/2023/05/11/p9rMufU.png" alt="909e59975caee0a33d811e3f662cc52f"></p>
 <h3 id="最终的解决方法"><a href="#最终的解决方法" class="headerlink" title="最终的解决方法"></a>最终的解决方法</h3><ol>
 <li>所有基础类型成员变量必须初始化。作用有两个：a.保证值不是垃圾值 b.代码可读性让别人能懂初始值是啥</li>
 <li>所有类变量可以不初始化，系统会出手帮忙调用default constructor，可以重写这个函数干坏事</li>
@@ -160,7 +160,7 @@
 <p>Q：那Map中未出现的Key的值需要初始化吗？</p>
 <p>A：不需要，Map这个类中保证了会初始化为0（如果是int的话）</p>
 <p><a target="_blank" rel="noopener" href="https://imgse.com/i/p9rMMpF">https://imgse.com/i/p9rMMpF</a></p>
-<p><img src="https://imgse.com/i/p9rMMpF" alt="6b77c6d8b8e8da7b143dbab9410c7d11"></p>
+<p><img src="https://s1.ax1x.com/2023/05/11/p9rMMpF.png" alt="6b77c6d8b8e8da7b143dbab9410c7d11"></p>
 
             </div>
 
